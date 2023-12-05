@@ -10,27 +10,58 @@
 
 <body> 
     <nav class="barra">
-        <img src="images/Diseño_sin_título-removebg-preview.png" alt="logo" class="logo">
-        <img src="images/MANU__6_-removebg-preview.png" alt="index" class="inicio">
-        <img src="images/MANU__5_-removebg-preview.png" alt="new" class="new">
+        <img src="images/Diseño_sin_título-removebg-preview.png" alt="logo" class="logo" />
+        <img src="images/MANU__6_-removebg-preview.png" alt="index" class="inicio" />
+        <a href="#create"><img src="images/MANU__5_-removebg-preview.png" alt="new" class="new" /></a>
     </nav>
+    <div id="create" class="modal">
+        <div class="ventana">
+            <a href="index.html">x</a>
+            <h2>Ventana</h2>
+            <form action="">
+                <input type="text">
+            </form>
+        </div>
+    </div>
     <div class="contenido">
         <div class="user">
-            <img src="images/police-2803371_1280.jpg" alt="img-perfil" class="imgperfil">
+            <img src="images/police-2803371_1280.jpg" alt="img-perfil" class="imgperfil" />
             <a href="" class="nameprofile">Juan perez</a>
-            <div class="boton">My friends</div>
-            <div class="boton">My likes</div>
-            <div class="botoncerrar">sign off</div>
+            <div class="boton"><a href="">My friends</a></div>
+            <div class="boton"><a href="">My likes</a></div>
+            <div class="botoncerrar"><a href="">sign off</a></div>
         </div>
         <div class="principal">
-            <div class="twet">
-                <div class="usertwet">Luis Preza</div>
-                <p>This is my cat!</p>
-                <div class="containerimage">
-                    <img class="imagetwet" src="images/cat-551554_1280.jpg" alt="image">
-                </div>
-                
-            </div>
+            <scroll-container>
+                <scroll-page id="page-1">
+                    <div class="twet">
+                        <div class="usertwet">Luis Preza</div>
+                        <p>This is my cat!</p>
+                        <div class="containerimage">
+                            <img class="imagetwet" src="images/cat-551554_1280.jpg" alt="image">
+                        </div>
+                    </div>
+                </scroll-page>
+                <scroll-page id="page-2">
+                    <div class="twet">
+                        <div class="usertwet">Luis Preza</div>
+                        <p>This is my cat!</p>
+                        <div class="containerimage">
+                            <img class="imagetwet" src="images/cat-551554_1280.jpg" alt="image">
+                        </div>
+                    </div>
+                </scroll-page>
+                <scroll-page id="page-3">
+                    <div class="twet">
+                        <div class="usertwet">Luis Preza</div>
+                        <p>This is my cat!</p>
+                        <div class="containerimage">
+                            <img class="imagetwet" src="images/cat-551554_1280.jpg" alt="image">
+                        </div>
+                    </div>
+                </scroll-page>
+              </scroll-container>
+            
         </div>
         <div class="space"></div>
     </div>

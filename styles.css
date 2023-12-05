@@ -6,6 +6,32 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    z-index: 1000;
+}
+
+.ventana {
+    background-color: aqua;
+    width: 300px;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+}
+
+.modal {
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    top: -250px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+#create:target {
+    opacity: 1;
+    padding-inline-start: auto;
 }
 
 .logo {
@@ -84,6 +110,11 @@ body {
     border-radius: 5px;
 }
 
+.boton > a {
+    text-decoration: none;
+    color: black;
+}
+
 .botoncerrar {
     width: 70%;
     height: 50px;
@@ -95,6 +126,11 @@ body {
     position: relative;
     top: 300px;
     border-radius: 5px;
+}
+
+.botoncerrar > a {
+    text-decoration: none;
+    color: black;
 }
 
 .twet {
@@ -135,5 +171,67 @@ body {
     width: 550px;
     min-height: 100%;
     min-width: 100%;
-    
+
 }
+
+.logpage {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorlog {
+    width: 400px;
+    height: 600px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+   
+}
+
+.contenedorlog > p {
+    font-size: 25px;
+}
+
+.logolog {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.inputlog {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.botonlog {
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    left: 50%;
+    background-color: white;
+    color: #969696;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+scroll-container {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  scroll-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
